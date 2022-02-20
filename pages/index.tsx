@@ -1,12 +1,10 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import { Person } from "../interface";
 // components
 
 import Hero from "../components/home/hero";
 import Services from "../components/home/services";
-const Home: NextPage<{ person: Person }> = ({ person }) => {
-  console.log(person);
+const Home: NextPage = () => {
   return (
     <div>
       <Head>
@@ -21,18 +19,10 @@ const Home: NextPage<{ person: Person }> = ({ person }) => {
           referrerPolicy="no-referrer"
         />
       </Head>
-      <Hero data={person} />
+      <Hero />
       <Services />
     </div>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/hello");
-  const person: Person = await res.json();
-  return {
-    props: { person },
-  };
 };
 
 export default Home;

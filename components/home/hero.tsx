@@ -3,7 +3,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import Img from "next/image";
 import herobg from "../../assets/herobg.jpg";
 
-const Hero = ({ data }: any) => {
+const Hero = () => {
   return (
     <Container className="main-hero" fluid>
       <div className="bg">
