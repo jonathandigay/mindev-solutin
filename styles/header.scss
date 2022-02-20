@@ -8,6 +8,12 @@
   z-index: 1000;
   background: white;
   .navbar {
+    .nav-hide {
+      display: none;
+    }
+    .nav-show {
+      display: block;
+    }
     .navbar-brand {
       max-width: 140px;
 
@@ -22,7 +28,9 @@
         letter-spacing: 1px;
         opacity: 0.8;
         a {
+          font-family: "Open Sans", sans-serif;
           font-size: 1.1rem !important;
+          font-weight: 100;
         }
       }
     }
