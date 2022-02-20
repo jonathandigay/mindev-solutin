@@ -1,0 +1,49 @@
+.services-cards {
+  position: relative;
+  transform: translateY(-120px);
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    > span {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+  .row {
+    max-width: 1000px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: scroll;
+    z-index: 2;
+    padding: 10px 0;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .card {
+      box-shadow: -3px 3px 5px 1px rgba(128, 128, 128, 0.5);
+      .img {
+        > span {
+          height: 100%;
+        }
+      }
+
+      .card-title {
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+        letter-spacing: 1px;
+      }
+      .card-body {
+      }
+    }
+  }
+}

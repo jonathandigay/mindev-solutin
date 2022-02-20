@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500&family=Open+Sans:wght@300;400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+// font-family: 'Merriweather Sans', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+.main {
+  background: rgba(51, 51, 51, 0.3);
+}
+
+.mindev {
+  max-width: 2000px;
+  margin: auto;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+}
+$primary: #39b3e3;
+$secondary: #1f2fb5;
+$gradientone: linear-gradient(#39b3e3, #203fb9);
+$gradienttwo: linear-gradient(#203fb9, #39b3e3);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@import "./header.scss";
+@import "./HOME/hero.scss";
+@import "./HOME//services.scss";
+
+@keyframes frombottom {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
