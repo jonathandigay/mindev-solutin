@@ -14,7 +14,7 @@ const Services = () => {
           <Col>
             <Card style={{ width: "18rem" }}>
               <div className="img">
-                <Image src={logo} />
+                <Image src={logo} alt="pic" />
               </div>
               <Card.Title>Static Website</Card.Title>
               <Card.Body>
@@ -26,6 +26,7 @@ const Services = () => {
           <Col>
             <Card style={{ width: "18rem" }}>
               <div className="img">
+                <Image src={logo} alt="pic" />
                 <Image src={logo} />
               </div>
               <Card.Title>Dynamic Website</Card.Title>
@@ -38,7 +39,7 @@ const Services = () => {
           <Col>
             <Card style={{ width: "18rem" }}>
               <div className="img">
-                <Image src={logo} />
+                <Image src={logo} alt="pic" />
               </div>
               <Card.Title>Static Website</Card.Title>
               <Card.Body>
