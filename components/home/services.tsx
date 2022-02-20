@@ -2,7 +2,10 @@ import React from "react";
 import { Card, Container, Col, Row } from "react-bootstrap";
 import Image from "next/image";
 import bg from "../../assets/curvebg.png";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/herobg.jpg";
+import webdesign from "../../assets/webdesign.png";
+import frontend from "../../assets/frontend.png";
+import fullstack from "../../assets/fullstack.png";
 const Services = () => {
   return (
     <>
@@ -14,36 +17,36 @@ const Services = () => {
           <Col md={4} sm={6}>
             <Card>
               <div className="img">
-                <Image src={logo} alt="pic" />
+                <Image src={webdesign} alt="webdesign" />
               </div>
-              <Card.Title>Static Website</Card.Title>
+              <Card.Title>Web Design</Card.Title>
               <Card.Body>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                facilis vitae adipisci harum omnis natus at
+                We Designing an minimalist user freindly UI/UX and innovative
+                design
               </Card.Body>
             </Card>
           </Col>
           <Col md={4} sm={6}>
             <Card>
               <div className="img">
-                <Image src={logo} alt="pic" />
+                <Image src={frontend} alt="frontend" />
               </div>
-              <Card.Title>Dynamic Website</Card.Title>
+              <Card.Title>Frontend Development</Card.Title>
               <Card.Body>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                facilis vitae adipisci harum omnis natus at
+                We create and optimize Responsive web user interface and also
+                the minmalist creature of web base system
               </Card.Body>
             </Card>
           </Col>
           <Col md={4} sm={12}>
             <Card>
               <div className="img">
-                <Image src={logo} alt="pic" />
+                <Image src={fullstack} alt="fullstack" />
               </div>
-              <Card.Title>Static Website</Card.Title>
+              <Card.Title>Fullstack Development</Card.Title>
               <Card.Body>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                facilis vitae adipisci harum omnis natus
+                From minimalist built in web based system to dynamic using the
+                new technology and efficient
               </Card.Body>
             </Card>
           </Col>

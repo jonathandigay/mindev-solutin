@@ -1,9 +1,12 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
+import { useEffect } from "react";
 // components
 
 import Hero from "../components/home/hero";
+import Objective from "../components/home/objective";
 import Services from "../components/home/services";
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -22,6 +25,7 @@ const Home: NextPage = () => {
       <div className="hero">
         <Hero />
         <Services />
+        <Objective />
       </div>
     </div>
   );

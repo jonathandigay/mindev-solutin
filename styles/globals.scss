@@ -11,7 +11,7 @@ body {
 // font-family: 'Poppins', sans-serif;
 
 .main {
-  background: rgba(51, 51, 51, 0.3);
+  background: rgba(51, 51, 51, 0.2);
 }
 
 .mindev {
@@ -45,10 +45,28 @@ img {
   height: 100% !important;
 }
 
+.loader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  .spinner-border {
+    width: 70px;
+    height: 70px;
+  }
+}
+
 @import "./header.scss";
 @import "./HOME/hero.scss";
 @import "./HOME//services.scss";
-
+@import "./HOME/objective.scss";
+@import "./footer.scss";
 @keyframes frombottom {
   0% {
     transform: translateY(100px);
