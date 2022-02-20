@@ -19,8 +19,10 @@ const Home: NextPage = () => {
           referrerPolicy="no-referrer"
         />
       </Head>
-      <Hero />
-      <Services />
+      <div className="hero">
+        <Hero />
+        <Services />
+      </div>
     </div>
   );
 };

@@ -11,8 +11,8 @@ const Services = () => {
           <Image src={bg} alt="pic" />
         </div>
         <Row>
-          <Col>
-            <Card style={{ width: "18rem" }}>
+          <Col md={4} sm={6}>
+            <Card>
               <div className="img">
                 <Image src={logo} alt="pic" />
               </div>
@@ -23,8 +23,8 @@ const Services = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
-            <Card style={{ width: "18rem" }}>
+          <Col md={4} sm={6}>
+            <Card>
               <div className="img">
                 <Image src={logo} alt="pic" />
               </div>
@@ -35,8 +35,8 @@ const Services = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col>
-            <Card style={{ width: "18rem" }}>
+          <Col md={4} sm={12}>
+            <Card>
               <div className="img">
                 <Image src={logo} alt="pic" />
               </div>
