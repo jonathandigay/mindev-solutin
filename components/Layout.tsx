@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Layouthead";
 import Footer from "./Layoutfooter";
-import { Spinner } from "react-bootstrap";
 
 const Layout = ({ children }: any) => {
   return (
@@ -9,6 +8,9 @@ const Layout = ({ children }: any) => {
       <Header />
       {children}
       <Footer />
+      <div className="up-arrow">
+        <i className="fas fa-arrow-up"></i>
+      </div>
     </div>
   );
 };

@@ -45,20 +45,23 @@ img {
   height: 100% !important;
 }
 
-.loader {
+.up-arrow {
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 5000;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 60px;
+  background: $primary;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
-  .spinner-border {
-    width: 70px;
-    height: 70px;
+  box-shadow: 0 0 3px 0 gray;
+  color: white;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: black;
   }
 }
 
@@ -66,7 +69,11 @@ img {
 @import "./HOME/hero.scss";
 @import "./HOME//services.scss";
 @import "./HOME/objective.scss";
+@import "./HOME/tech.scss";
 @import "./footer.scss";
+@import "./HOME/testimonial.scss";
+@import "./HOME/partners.scss";
+@import "./works//works.scss";
 @keyframes frombottom {
   0% {
     transform: translateY(100px);

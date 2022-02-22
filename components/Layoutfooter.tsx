@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-
+import Link from "next/link";
 const Layoutfooter = () => {
   return (
     <Container className="footer" fluid>
@@ -48,6 +48,10 @@ const Layoutfooter = () => {
       </Row>
       <div className="allright">
         <p>all right reserved © 2022</p>
+        <p>
+          made by :
+          <Link href="https://jonathandigay.web.app">Jonathan Digay</Link>
+        </p>
       </div>
     </Container>
   );

@@ -28,9 +28,11 @@
         letter-spacing: 1px;
         opacity: 0.8;
         a {
-          font-family: "Open Sans", sans-serif;
-          font-size: 1.1rem !important;
-          font-weight: 100;
+          width: 100%;
+        }
+        p {
+          margin: 0;
+          padding: 0;
         }
       }
     }

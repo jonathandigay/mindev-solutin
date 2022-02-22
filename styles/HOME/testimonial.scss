@@ -1,0 +1,52 @@
+.testimonial {
+  height: 100%;
+  width: 100%;
+  margin: 50px 0;
+  padding: 20px 0;
+  .carousel {
+    height: 100%;
+    width: 100%;
+    min-height: 400px;
+
+    .card {
+      min-height: 400px;
+      border: none;
+
+      .img {
+        max-width: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: auto;
+      }
+      .card-body {
+        height: 100%;
+      }
+
+      .name,
+      .position {
+        text-align: center;
+      }
+    }
+
+    .carousel-control-prev {
+      width: 30px;
+      color: #333;
+    }
+
+    .carousel-control-next {
+      width: 30px;
+    }
+    .carousel-indicators {
+      button {
+        width: 15px;
+        height: 15px;
+        border: none;
+        background: rgba(51, 51, 51, 0.3);
+        border-radius: 50%;
+      }
+      .active {
+        background: $primary;
+      }
+    }
+  }
+}

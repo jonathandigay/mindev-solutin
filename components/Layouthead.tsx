@@ -54,25 +54,33 @@ const Layouthead = () => {
               className={`navigation ${path === "/" && "active"}`}
               onClick={Navigation}
             >
-              <Link href="/">Home</Link>
+              <Link href="/">
+                <p>Home</p>
+              </Link>
             </li>
             <li
               className={`navigation ${path === "/works" && "active"}`}
               onClick={Navigation}
             >
-              <Link href="/works">Works</Link>
+              <Link href="/works">
+                <p>Works</p>
+              </Link>
             </li>
             <li
               className={`navigation ${path === "/services" && "active"}`}
               onClick={Navigation}
             >
-              <Link href="/services">Services</Link>
+              <Link href="/services">
+                <p>Services</p>
+              </Link>
             </li>
             <li
               className={`navigation ${path === "/about" && "active"}`}
               onClick={Navigation}
             >
-              <Link href="/about">About us</Link>
+              <Link href="/about">
+                <p>About us</p>
+              </Link>
             </li>
           </ul>
         </Navbar.Collapse>

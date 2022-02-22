@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-
+import Work from "../components/works/works";
 const Works: NextPage = () => {
   return (
     <div>
@@ -16,7 +16,7 @@ const Works: NextPage = () => {
           referrerPolicy="no-referrer"
         />
       </Head>
-      <h1>Works</h1>
+      <Work />
     </div>
   );
 };

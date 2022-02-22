@@ -1,0 +1,46 @@
+.works {
+  padding: 30px 0;
+  .card {
+    background: $gradientone;
+    max-width: 300px;
+    box-shadow: 8px 8px 0 5px rgba(51, 51, 51, 0.4);
+    padding: 0;
+    margin-bottom: 20px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > span {
+      width: 100% !important;
+      object-position: center;
+    }
+  }
+
+  .carousel {
+    .carousel-control-prev {
+      display: none;
+    }
+
+    .carousel-control-next {
+      display: none;
+    }
+    .carousel-indicators {
+      button {
+        width: 15px;
+        height: 15px;
+        border: none;
+        background: rgba(51, 51, 51, 0.3);
+        border-radius: 50%;
+      }
+      .active {
+        background: $primary;
+      }
+    }
+
+    .row {
+      margin-bottom: 40px;
+      padding-right: 15px;
+    }
+  }
+}

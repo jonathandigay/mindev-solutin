@@ -5,7 +5,10 @@ import { useEffect } from "react";
 
 import Hero from "../components/home/hero";
 import Objective from "../components/home/objective";
+import Partners from "../components/home/partners";
 import Services from "../components/home/services";
+import Tech from "../components/home/tech";
+import Testimonial from "../components/home/testimonial";
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +29,9 @@ const Home: NextPage = () => {
         <Hero />
         <Services />
         <Objective />
+        <Tech />
+        <Partners />
+        <Testimonial />
       </div>
     </div>
   );
