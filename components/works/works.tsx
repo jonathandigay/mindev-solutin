@@ -6,10 +6,8 @@ const Works = () => {
   return (
     <Container className="works">
       <Row>
-        <div className="name">
-          <p>Mindev Solution</p>
-        </div>
         <div className="label">
+          <p>Mindev Solution</p>
           <h2>Our Works</h2>
         </div>
       </Row>

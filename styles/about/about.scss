@@ -1,0 +1,19 @@
+.about {
+  .label {
+    margin: 20px 0;
+  }
+  .img-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img {
+      max-width: 350px;
+    }
+
+    .photo-label {
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+}

@@ -1,15 +1,5 @@
 import React, { useState } from "react";
-import {
-  Col,
-  Container,
-  Navbar,
-  Row,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Container, Navbar, Form, FormControl, Button } from "react-bootstrap";
 import Image from "next/image";
 import mindevlogo from "../assets/mindevtran.png";
 import { useRouter } from "next/router";
@@ -84,7 +74,7 @@ const Layouthead = () => {
             </li>
           </ul>
         </Navbar.Collapse>
-        <div className="contact">
+        <div className="contact-btn">
           <button>Contact Us</button>
         </div>
       </Navbar>

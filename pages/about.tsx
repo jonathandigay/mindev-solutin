@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-
+import AboutComponent from "../components/about/about";
 const About: NextPage = () => {
   return (
     <div>
@@ -16,7 +16,7 @@ const About: NextPage = () => {
           referrerPolicy="no-referrer"
         />
       </Head>
-      <h1>About</h1>
+      <AboutComponent />
     </div>
   );
 };
