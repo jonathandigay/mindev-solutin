@@ -23,7 +23,7 @@ const Layouthead = () => {
   const fetchSearch = (e: any) => {
     e.preventDefault();
     setIsNav(!isNav);
-    Route.push(`/search=/${searchvalue}`);
+    Route.push(`/search/${searchvalue}`);
     setSearchValue("");
   };
 
