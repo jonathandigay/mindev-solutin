@@ -5,12 +5,22 @@ import Img from "next/image";
 const About = () => {
   return (
     <Container className="about">
-      <Row className="label">
+      <Row
+        className="label"
+        style={{ overflow: "hidden" }}
+        data-aos="fade-down"
+        data-aos-anchor-placement="top-bottom"
+      >
         <p>Mindev Solution</p>
         <h2>About us / Our story</h2>
       </Row>
-      <Row>
-        <Col sm={6} className="img-section">
+      <Row style={{ overflow: "hidden" }}>
+        <Col
+          sm={6}
+          className="img-section"
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-bottom"
+        >
           <div>
             <div className="img">
               <Img src={me} alt="me" />
@@ -21,7 +31,7 @@ const About = () => {
             </div>
           </div>
         </Col>
-        <Col sm={6}>
+        <Col sm={6} data-aos="fade-left" data-aos-anchor-placement="top-bottom">
           <div className="label">
             <h1>Mindev Solution</h1>
           </div>

@@ -7,7 +7,7 @@ const Wall = () => {
   return (
     <>
       <div className="blogs-contents">
-        <Card>
+        <Card data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <Card.Header>
             <h3>Mindev solution launch 2022 as software development company</h3>
             <p>
@@ -34,7 +34,7 @@ const Wall = () => {
             <button>show more</button>
           </Card.Body>
         </Card>{" "}
-        <Card>
+        <Card data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <Card.Header>
             <h3>Mindev solution launch 2022 as software development company</h3>
             <p>

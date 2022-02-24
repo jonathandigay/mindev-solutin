@@ -5,7 +5,7 @@ import comingsoon from "../../assets/comingsoon.png";
 const Works = () => {
   return (
     <Container className="works">
-      <Row>
+      <Row data-aos="fade-down" data-aos-anchor-placement="top-bottom">
         <div className="label">
           <p>Mindev Solution</p>
           <h2>Our Works</h2>
@@ -13,7 +13,7 @@ const Works = () => {
       </Row>
       <Carousel fade>
         <Carousel.Item>
-          <Row>
+          <Row data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <Col md={3} sm={4} xs={6}>
               <Card>
                 <div className="img">

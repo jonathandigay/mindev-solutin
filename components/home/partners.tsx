@@ -5,7 +5,7 @@ import logo from "../../assets/mindev.png";
 const Partners = () => {
   return (
     <Container className="main-partners">
-      <Row>
+      <Row data-aos="fade-down" data-aos-anchor-placement="top-bottom">
         <div className="name">
           <p>Mindev Solution</p>
         </div>

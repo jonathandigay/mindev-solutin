@@ -3,7 +3,11 @@ import React from "react";
 const Sidebar = () => {
   return (
     <>
-      <form className="form">
+      <form
+        className="form"
+        data-aos="fade-left"
+        data-aos-anchor-placement="top-bottom"
+      >
         <input type="text" placeholder="Search..." />
         <button>
           <i className="fas fa-search"></i>

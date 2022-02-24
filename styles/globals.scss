@@ -4,6 +4,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 // font-family: 'Merriweather Sans', sans-serif;
@@ -32,6 +33,7 @@ $gradienttwo: linear-gradient(#203fb9, #39b3e3);
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 ul {

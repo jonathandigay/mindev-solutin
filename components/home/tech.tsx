@@ -4,7 +4,11 @@ import { Techimages } from "../../tech";
 import Img from "next/image";
 const Tech = () => {
   return (
-    <Container className="techs">
+    <Container
+      className="techs"
+      data-aos="fade-down"
+      data-aos-anchor-placement="top-bottom"
+    >
       <Row>
         <Col>
           <h3>Mindev Technologies</h3>

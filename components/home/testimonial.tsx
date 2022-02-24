@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Carousel, Col, Container, Row, Card } from "react-bootstrap";
 import Img from "next/image";
 import me from "../../assets/me.png";
 const Testimonial = () => {
   return (
     <Container className="testimonial" fluid>
-      <Row>
+      <Row style={{ overflow: "hidden" }}>
         <Col md={6}>
           <Carousel fade>
             <Carousel.Item interval={1000}>
@@ -76,24 +76,28 @@ const Testimonial = () => {
           </Carousel>
         </Col>
 
-        <Col md={6}>
-          <h1>Our Company Feedbacks</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed veniam
-            nisi iure hic nostrum quisquam voluptas nulla, error temporibus
-            assumenda magni a vitae illum, adipisci eius eos maiores id
-            cupiditate porro eveniet obcaecati corporis cum. Facilis officiis
-            <br />
-            hic numquam animi voluptatum provident similique accusantium
-            pariatur cum dolorem? Adipisci, sapiente ullam! Alias similique
-            labore ullam aliquam officiis dolorum inventore necessitatibus
-            <br />
-            voluptatibus numquam error, molestias eius nulla explicabo nostrum
-            sunt atque? Magnam repellendus architecto, laborum debitis ex
-            explicabo a. Distinctio molestias veniam eligendi aliquid aspernatur
-            iure neque, iste recusandae nisi in modi debitis consequuntur ut
-            laboriosam veritatis quod at sint minima voluptatibus?
-          </p>
+        <Col md={6} data-aos="fade-left" data-aos-anchor-placement="top-bottom">
+          <div>
+            <h1>Our Company Feedbacks</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+              veniam nisi iure hic nostrum quisquam voluptas nulla, error
+              temporibus assumenda magni a vitae illum, adipisci eius eos
+              maiores id cupiditate porro eveniet obcaecati corporis cum.
+              Facilis officiis
+              <br />
+              hic numquam animi voluptatum provident similique accusantium
+              pariatur cum dolorem? Adipisci, sapiente ullam! Alias similique
+              labore ullam aliquam officiis dolorum inventore necessitatibus
+              <br />
+              voluptatibus numquam error, molestias eius nulla explicabo nostrum
+              sunt atque? Magnam repellendus architecto, laborum debitis ex
+              explicabo a. Distinctio molestias veniam eligendi aliquid
+              aspernatur iure neque, iste recusandae nisi in modi debitis
+              consequuntur ut laboriosam veritatis quod at sint minima
+              voluptatibus?
+            </p>
+          </div>
         </Col>
       </Row>
     </Container>

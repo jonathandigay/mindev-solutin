@@ -2,10 +2,10 @@ import React from "react";
 import { Card, Container, Col, Row } from "react-bootstrap";
 import Image from "next/image";
 import bg from "../../assets/curvebg.png";
-import logo from "../../assets/herobg.jpg";
 import webdesign from "../../assets/webdesign.png";
 import frontend from "../../assets/frontend.png";
 import fullstack from "../../assets/fullstack.png";
+
 const Services = () => {
   return (
     <>
@@ -13,7 +13,8 @@ const Services = () => {
         <div className="bg">
           <Image src={bg} alt="pic" />
         </div>
-        <Row>
+
+        <Row data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <Col md={4} sm={6}>
             <Card>
               <div className="img">

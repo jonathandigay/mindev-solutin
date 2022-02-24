@@ -6,7 +6,6 @@ const Search: NextPage = () => {
   const Routes = useRouter();
 
   const params = Routes.query.search;
-  console.log(params);
   return (
     <div>
       <Head>
@@ -22,7 +21,11 @@ const Search: NextPage = () => {
         />
       </Head>
       <Container className="searchresult">
-        <div className="label">
+        <div
+          className="label"
+          data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+        >
           <h3>Mindev Solution</h3>
           <h1>
             Search result of

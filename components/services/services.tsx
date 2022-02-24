@@ -7,19 +7,23 @@ import Fullstack from "../../assets/fullstack.png";
 const Services = () => {
   return (
     <Container className="services">
-      <Row>
+      <Row style={{ overflow: "hidden" }}>
         <div className="label">
           <p>Mindev Solution</p>
           <h2>Mindev Services</h2>
         </div>
       </Row>
-      <Row>
-        <Col md={6}>
+      <Row style={{ overflow: "hidden" }}>
+        <Col
+          md={6}
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-bottom"
+        >
           <div className="img">
             <Img src={webdesign} alt="webdesign" />
           </div>
         </Col>
-        <Col md={6}>
+        <Col md={6} data-aos="fade-left" data-aos-anchor-placement="top-bottom">
           <label>
             <h1>Web Design</h1>
           </label>
@@ -35,8 +39,13 @@ const Services = () => {
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col xs={{ order: "last" }} md={{ order: "first", span: 6 }}>
+      <Row style={{ overflow: "hidden" }}>
+        <Col
+          xs={{ order: "last" }}
+          md={{ order: "first", span: 6 }}
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-bottom"
+        >
           <label>
             <h1>Frontend Development</h1>
           </label>
@@ -51,19 +60,28 @@ const Services = () => {
             </p>
           </div>
         </Col>
-        <Col xs={{ order: "first" }} md={{ order: "last", span: 6 }}>
+        <Col
+          xs={{ order: "first" }}
+          md={{ order: "last", span: 6 }}
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-bottom"
+        >
           <div className="img">
             <Img src={Frontend} alt="Frontend" />
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col md={6}>
+      <Row style={{ overflow: "hidden" }}>
+        <Col
+          md={6}
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-bottom"
+        >
           <div className="img">
             <Img src={Fullstack} alt="Fullstack" />
           </div>
         </Col>
-        <Col md={6}>
+        <Col md={6} data-aos="fade-left" data-aos-anchor-placement="top-bottom">
           <label>
             <h1>Fullstack Decelpment</h1>
           </label>

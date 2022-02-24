@@ -21,17 +21,22 @@ const About: NextPage = () => {
         />
       </Head>
       <Container fluid className="blogs">
-        <Row className="hero">
+        <Row className="hero" style={{ overflow: "hidden" }}>
           <div className="bg">
             <Img src={bg} alt="bg" />
           </div>
           <div className="overlay"></div>
-          <div className="label">
+          <div
+            className="label"
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom"
+          >
+            {" "}
             <h3>Mindev Solution</h3>
             <h1>Mindev Daily news</h1>
           </div>
         </Row>
-        <Row className="blogs-wrapper">
+        <Row className="blogs-wrapper" style={{ overflow: "hidden" }}>
           <Col md={8} className="wall">
             <Wall />
           </Col>
