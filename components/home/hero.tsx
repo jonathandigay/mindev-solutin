@@ -2,8 +2,14 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Img from "next/image";
 import herobg from "../../assets/herobg.jpg";
-
+import { useToogleContext } from "../../context/toogler";
 const Hero = () => {
+  const { isContact, setIsContact } = useToogleContext();
+
+  const isContactModal = () => {
+    setIsContact(!isContact);
+  };
+
   return (
     <Container className="main-hero" fluid>
       <div className="bg">
@@ -27,13 +33,13 @@ const Hero = () => {
             <p>Were you found the Minimalist Developer out there</p>
           </div>
           <div className="book">
-            <button>Book now</button>
+            <button onClick={isContactModal}>Book now</button>
           </div>
         </Col>
         <Col className="youtube" lg={6}>
           <div className="yt">
             <iframe
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
+              src="https://www.youtube.com/embed/zL1gMeoN8bI"
               frameBorder="0"
               allowFullScreen={true}
             ></iframe>

@@ -4,12 +4,31 @@ import Image from "next/image";
 import mindevlogo from "../assets/mindevtran.png";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useToogleContext } from "../context/toogler";
 const Layouthead = () => {
-  const path = useRouter().asPath;
+  const Route = useRouter();
+  const path = Route.asPath;
   const [isNav, setIsNav] = useState<boolean>(false);
+  const { isContact, setIsContact } = useToogleContext();
+  const [searchvalue, setSearchValue] = useState("");
 
   const Navigation = () => {
     setIsNav(!isNav);
+  };
+  const searchOnChange = (e: any) => {
+    const value = e.target.value;
+    setSearchValue(value);
+  };
+
+  const fetchSearch = (e: any) => {
+    e.preventDefault();
+    setIsNav(!isNav);
+    Route.push(`/search=/${searchvalue}`);
+    setSearchValue("");
+  };
+
+  const isContactModal = () => {
+    setIsContact(!isContact);
   };
 
   return (
@@ -34,8 +53,14 @@ const Layouthead = () => {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+              onChange={searchOnChange}
+              value={searchvalue}
             />
-            <Button variant="outline-success">
+            <Button
+              variant="outline-success"
+              type="submit"
+              onClick={fetchSearch}
+            >
               <i className="fas fa-search"></i>
             </Button>
           </Form>
@@ -65,6 +90,14 @@ const Layouthead = () => {
               </Link>
             </li>
             <li
+              className={`navigation ${path === "/blogs" && "active"}`}
+              onClick={Navigation}
+            >
+              <Link href="/blogs">
+                <p>Blogs</p>
+              </Link>
+            </li>
+            <li
               className={`navigation ${path === "/about" && "active"}`}
               onClick={Navigation}
             >
@@ -75,7 +108,7 @@ const Layouthead = () => {
           </ul>
         </Navbar.Collapse>
         <div className="contact-btn">
-          <button>Contact Us</button>
+          <button onClick={isContactModal}>Book now</button>
         </div>
       </Navbar>
     </Container>
