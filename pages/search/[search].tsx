@@ -25,11 +25,11 @@ const Search: NextPage = () => {
         <div className="label">
           <h3>Mindev Solution</h3>
           <h1>
-            Search result of{" "}
+            Search result of
             {params && (
               <span>
-                <span>"</span> {params}
-                <span>":</span>
+                <span> &quot;</span> {params}
+                <span>&quot;</span>
               </span>
             )}
           </h1>
